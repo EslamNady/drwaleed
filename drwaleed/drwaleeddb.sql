@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2018 at 11:07 AM
+-- Generation Time: Jun 17, 2018 at 09:07 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `aboutdoctor` (
 --
 
 INSERT INTO `aboutdoctor` (`id`, `paragraph`, `image`) VALUES
-(1, 'thbgvfc', 'waleed.jpg');
+(1, 'doctor fashe5', 'waleed.jpg');
 
 -- --------------------------------------------------------
 
@@ -58,7 +58,9 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 INSERT INTO `admins` (`email`, `name`, `password`) VALUES
-('esspk01@gmail.com', 'Eslam', '12345');
+('eslam@m', 'Eslam', '12..3'),
+('esspk01@gmail.com', 'Eslam', '12345'),
+('nour@h', 'Nour', '12345');
 
 -- --------------------------------------------------------
 
@@ -70,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `sliderimages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `path` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
 --
 -- Dumping data for table `sliderimages`
@@ -81,8 +83,7 @@ INSERT INTO `sliderimages` (`id`, `path`) VALUES
 (24, '3.jpg'),
 (25, '2.jpg'),
 (27, '1.jpg'),
-(29, 'Success Stories  Cover 03.jpg'),
-(30, '2.jpg');
+(35, 'Success Stories  Cover 03.jpg');
 
 -- --------------------------------------------------------
 
@@ -118,18 +119,17 @@ CREATE TABLE IF NOT EXISTS `stories` (
   `frontImg` text NOT NULL,
   `backImg` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `stories`
 --
 
 INSERT INTO `stories` (`id`, `storyName`, `arDesc`, `enDesc`, `frontImg`, `backImg`) VALUES
-(8, 'heleeeeen', ' rhjer fdn df dfjhnfgr', 'beh ben d;k dmsn fdnb', 'WIN_20170321_15_41_58_Pro.jpg', 'WIN_20170321_15_42_05_Pro.jpg'),
+(8, 'heleeeeen', 'ؤيؤس', 'beh ben d;k dmsn fdnb', 'WIN_20170321_15_41_58_Pro.jpg', 'WIN_20170321_15_42_05_Pro.jpg'),
 (9, 'bdsndsbn', ' bndfbn', 'nmbermn dbnfdn', '2.jpg', '2.jpg'),
 (10, 'bnhjdffbn', 'ndfnmdmnf dfnbfnbf', ' fdhjdfnnbdbnd', '2.jpg', '2.jpg'),
-(11, 'bndfnb', 'jhsdnbds', 'mnfbnnbdf fdbndbndfnbdf dfbnfdbnrejdfndf fjskjsmdnf fndnbfdnbdf', '2-1.jpg', '2-1.jpg'),
-(13, 'abdelrahmana abdudldshdsjd', ',mnfnf dbrj fnd slr hb fknnfd rh ', 'dfn fbbm dbnsdnb ejkjf nbf dnsm nmdl', '2-1.jpg', '2-1.jpg');
+(19, 'bfgxbf', ' الصناعة منذ القرن السادس عشر ، عندما أخذت طابعة غير معروفة مجموعة من الأطباق \n\nالصناعة منذ القرن السادس عشر ، عندما أخذت طابعة غير معروفة مجموعة من الأطباق ودمّعتها\n\nالصناعة منذ القرن السادس عشر ، عندما أخذت طابعة غير معروفة مجموعة من الأطباق ودمّعتها\n\nالصناعة منذ القرن السادس عشر ، عندما أخذت طابعة غير معروفة مجموعة من الأطباق ودمّعتهاودمّعتها', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum hasis simply dummy text of the printing and typesetting industry. Lorem Ipsum hasis simply dummy text of the printing and typesetting industry. Lorem Ipsum hasis simply dummy text of the printing and typesetting industry. Lorem Ipsum has', '429414_547857481910871_335147535_n-1.jpg', 'decompress-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -146,7 +146,6 @@ CREATE TABLE IF NOT EXISTS `youtubevideos` (
 --
 
 INSERT INTO `youtubevideos` (`video`) VALUES
-('<iframe src="https://www.youtube.com/embed/JCZlEgXyT0Q" frameborder="0" ></iframe>'),
 ('<iframe src="https://www.youtube.com/embed/zg9RwFmNRVk" frameborder="0"></iframe>'),
 ('<iframe src="https://www.youtube.com/embed/JO9tJTPlisU" frameborder="0" ></iframe>'),
 ('<iframe src="https://www.youtube.com/embed/GLaHzkcHj6w" frameborder="0"></iframe>'),
